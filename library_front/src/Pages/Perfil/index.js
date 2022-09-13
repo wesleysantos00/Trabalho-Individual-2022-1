@@ -9,7 +9,7 @@ const Perfil = () => {
 
     const resBooks = async () => {
         await rentedUserBooks(sessionStorage.getItem('app-userID'))
-          .then((response) => setBooks(response?.data));
+          .then((response) => setBooks(response.data));
       };
 
     useEffect(() => {
